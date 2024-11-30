@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PURSY VENTAS: Propiedades</title>
+    <style>
+      /* Estilo global para el cuerpo del documento */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4; /* Color de fondo para el cuerpo */
+      }
+
+      /* Estilo para el encabezado con el título y subtítulo */
+      header {
+        background-color: #fff; /* Fondo blanco */
+        color: #000; /* Texto negro */
+        text-align: center; /* Centra el texto */
+        padding: 20px;
+        border-bottom: 2px solid #000; /* Línea negra en la parte inferior del encabezado */
+        position: relative; /* Para posicionar la imagen a la izquierda */
+      }
+
+      header img.logo {
+        position: absolute;
+        left: 20px; /* Espacio desde el borde izquierdo */
+        top: 50%;
+        transform: translateY(-50%); /* Centra verticalmente */
+        max-height: 80px; /* Tamaño máximo de la imagen del logo */
+      }
+
+      h1 {
+        font-family: "Cambria Rounded", Cambria, serif; /* Fuente Cambria Rounded */
+        margin: 0;
+        font-size: 2.5em; /* Tamaño de fuente */
+      }
+
+      h2 {
+        font-family: "Cambria Rounded", Cambria, serif; /* Fuente Cambria Rounded */
+        margin: 10px 0 0;
+        font-size: 1.5em; /* Tamaño de fuente para el subtítulo */
+      }
+
+      .botones {
+        margin: 20px 0;
+        text-align: center; /* Centra los botones debajo del título */
+      }
+
+      .boton {
+        background-color: #f5c6c6; /* Color piel */
+        color: #fff; /* Texto blanco */
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0 10px; /* Espacio horizontal entre los botones */
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none; /* Quita el subrayado en los enlaces */
+        display: inline-block;
+      }
+
+      .boton:hover {
+        background-color: #e0a8a8; /* Color piel más oscuro en hover */
+      }
+
+      /* Estilo para el contenedor principal de la página */
+      .contenedor-principal {
+        display: flex;
+        justify-content: space-between; /* Espacio entre imagen lateral y contenido principal */
+        padding: 20px;
+      }
+
+      aside {
+        width: 20%; /* Ancho del aside */
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      main {
+        width: 60%; /* Ancho del contenedor principal */
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+        gap: 20px; /* Espacio de 20px entre los elementos */
+        justify-content: center; /* Centra los elementos horizontalmente */
+      }
+
+      /* Estilo para cada contenedor de imagen, título y subtítulo */
+      .contenedor {
+        display: flex;
+        flex-direction: column; /* Organiza los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        background-color: #fff; /* Fondo blanco para el contenedor */
+        padding: 10px;
+        border-radius: 8px; /* Bordes redondeados para el contenedor */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+        max-width: 300px; /* Ancho máximo del contenedor */
+        margin: 0; /* Sin margen adicional */
+        text-align: center; /* Centra el texto dentro del contenedor */
+        text-decoration: none; /* Quita el subrayado del enlace */
+        color: inherit; /* Hereda el color del texto del contenedor */
+      }
+
+      /* Estilo para la imagen */
+      .imagen {
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+        border-radius: 8px; /* Bordes redondeados para la imagen */
+      }
+
+      /* Estilo para el bloque de texto debajo de la imagen */
+      .texto {
+        text-align: center; /* Centra el texto dentro del contenedor */
+      }
+
+      h3 {
+        font-family: "Cambria Rounded", Cambria, serif; /* Fuente Cambria Rounded */
+        color: #333; /* Color del subtítulo */
+        margin: 0;
+        font-size: 1.2em; /* Tamaño de fuente para el subtítulo específico */
+      }
+
+      p {
+        margin: 10px 0 0;
+        font-size: 1em;
+        color: #666; /* Color de la descripción */
+      }
+
+      /* Estilo para el pie de página */
+      footer {
+        background-color: #fff; /* Fondo blanco */
+        color: #000; /* Texto negro */
+        text-align: center; /* Centra el texto */
+        padding: 10px;
+        border-top: 2px solid #000; /* Línea negra en la parte superior del pie de página */
+        position: fixed; /* Fija el pie de página en la parte inferior */
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://scontent-scl2-1.xx.fbcdn.net/v/t39.30808-6/458753363_10233146822591047_5200527381049351667_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=S6HAxMn4-X8Q7kNvgH4e47k&_nc_ht=scontent-scl2-1.xx&_nc_gid=ANV__OgJogdqMTGzf0nHuHb&oh=00_AYDSssjnO-7g6rEB1F4tWrfKox1tL_5SQJR4rKnUPVJ7fQ&oe=66FA4596"
+        alt="Imagen del título"
+        class="logo"
+      />
+      <h1>Srta Gatica Propiedades</h1>
+      <h2>Casas en Venta</h2>
+      <div class="botones">
+        <a href="Inicio SrtaGaticaPropiedades.html" class="boton"
+          >Página Principal</a
+        >
+        <a href="contactanos.html" class="boton">Contáctanos</a>
+        <a href="Inicio SrtaGaticaPropiedades.html" class="boton"
+          >Pide una Hora</a
+        >
+      </div>
+    </header>
+    <div class="contenedor-principal">
+      <aside>
+        <img
+          src="https://scontent-scl2-1.xx.fbcdn.net/v/t39.30808-6/458753363_10233146822591047_5200527381049351667_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=S6HAxMn4-X8Q7kNvgH4e47k&_nc_ht=scontent-scl2-1.xx&_nc_gid=ANV__OgJogdqMTGzf0nHuHb&oh=00_AYDSssjnO-7g6rEB1F4tWrfKox1tL_5SQJR4rKnUPVJ7fQ&oe=66FA4596"
+          alt="Imagen lateral izquierda"
+          style="max-width: 100%"
+        />
+      </aside>
+      <main>
+        <!-- Bloque 1 -->
+        <a href="casa1.html" class="contenedor">
+          <img
+            src="https://scontent-scl2-1.xx.fbcdn.net/v/t39.30808-6/459057006_122098762712519505_8222680610529036680_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_V1hyvKwy3QQ7kNvgE8W7yW&_nc_ht=scontent-scl2-1.xx&_nc_gid=A7ipeMn969PMB7lXy_-pwrf&oh=00_AYDsvE_FrJ-b2YIDO3s-smJ37dZzEG7d0V0YUOEwuPSwBQ&oe=66FA325A"
+            alt="Parcela Curacavi En Condominio"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Parcela Curacaví Condominio</h3>
+            <p>Parcela En Condominio con un valor de 200.000.000.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 2 -->
+        <a href="casa2.html" class="contenedor">
+          <img
+            src="https://web.whatsapp.com/144894f8-c684-49e8-8fdf-00a5e0ac3953"
+            alt="Terreno en Curacaví"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Parcela Curacaví: Terreno Disponible.</h3>
+            <p>5000 Metros Cuadrados (1000 $UF).</p>
+          </div>
+        </a>
+
+        <!-- Bloque 3 -->
+        <a href="casa3.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen3.jpg"
+            alt="Descripción de la imagen 3"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 3</h3>
+            <p>Descripción de la imagen 3.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 4 -->
+        <a href="casa4.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen4.jpg"
+            alt="Descripción de la imagen 4"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 4</h3>
+            <p>Descripción de la imagen 4.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 5 -->
+        <a href="casa5.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen5.jpg"
+            alt="Descripción de la imagen 5"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 5</h3>
+            <p>Descripción de la imagen 5.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 6 -->
+        <a href="casa6.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen6.jpg"
+            alt="Descripción de la imagen 6"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 6</h3>
+            <p>Descripción de la imagen 6.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 7 -->
+        <a href="casa7.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen7.jpg"
+            alt="Descripción de la imagen 7"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 7</h3>
+            <p>Descripción de la imagen 7.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 8 -->
+        <a href="casa8.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen8.jpg"
+            alt="Descripción de la imagen 8"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 8</h3>
+            <p>Descripción de la imagen 8.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 9 -->
+        <a href="casa9.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen9.jpg"
+            alt="Descripción de la imagen 9"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 9</h3>
+            <p>Descripción de la imagen 9.</p>
+          </div>
+        </a>
+
+        <!-- Bloque 10 -->
+        <a href="casa10.html" class="contenedor">
+          <img
+            src="ruta-a-tu-imagen10.jpg"
+            alt="Descripción de la imagen 10"
+            class="imagen"
+          />
+          <div class="texto">
+            <h3>Subtítulo de la Imagen 10</h3>
+            <p>Descripción de la imagen 10.</p>
+          </div>
+        </a>
+      </main>
+      <aside>
+        <img
+          src="https://scontent-scl2-1.xx.fbcdn.net/v/t39.30808-6/458753363_10233146822591047_5200527381049351667_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=S6HAxMn4-X8Q7kNvgH4e47k&_nc_ht=scontent-scl2-1.xx&_nc_gid=ANV__OgJogdqMTGzf0nHuHb&oh=00_AYDSssjnO-7g6rEB1F4tWrfKox1tL_5SQJR4rKnUPVJ7fQ&oe=66FA4596"
+          alt="Imagen lateral derecha"
+          style="max-width: 100%"
+        />
+      </aside>
+    </div>
+    <footer>&copy; 2024 Todos los derechos reservados.</footer>
+  </body>
+</html>
